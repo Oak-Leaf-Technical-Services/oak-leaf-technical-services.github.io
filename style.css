@@ -46,10 +46,10 @@ body {
   
   .hero {
     text-align: center;
-    padding: 8rem 1rem;
+    padding: 1rem 1rem;
     background-size: cover;
     background-position: center;
-    height: 40vh;
+    height: 10vh;
   }
   
   .main-title {
