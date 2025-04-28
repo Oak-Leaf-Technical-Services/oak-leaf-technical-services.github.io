@@ -1,6 +1,27 @@
+@font-face {
+  font-family: 'AvenirNextLTPro';
+  src: url('/fonts/AvenirNextLTPro.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNextLTPro';
+  src: url('/fonts/AvenirNextLTProBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNextLTPro';
+  src: url('/fonts/AvenirNextLTProLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'AvenirNextLTPro', sans-serif;
     background-color: #F4F3F1;
     color: #1B130E;
     line-height: 1.6;
@@ -21,26 +42,6 @@ body {
   
   .logo {
     height: 60px;
-  }
-  
-  .nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav a {
-    text-decoration: none;
-    color: #a5a29a;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  .nav a:hover {
-    color: #513E29;
   }
   
   .hero {
