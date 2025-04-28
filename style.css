@@ -28,16 +28,21 @@ body {
   }
   
   .container {
-    max-width: 80rem;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   
   .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: left;
-    padding: 1rem 0;
+    background: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
   
   .logo {
