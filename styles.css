@@ -1,4 +1,4 @@
-/* Basic reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -12,10 +12,52 @@
     color: #333;
   }
   
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Site Header */
+  .site-header {
+    background: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  
+  .site-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .site-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .site-nav a:hover {
+    color: #0077cc;
+  }
+  
   /* Hero Section */
   .hero {
     background: url('background.png') center center/cover no-repeat;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,21 +106,9 @@
   }
   
   /* Footer */
-  footer {
+  .site-footer {
     background: #222;
     color: #eee;
     text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
-  }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .hero-content h1 {
-      font-size: 2rem;
-    }
-    .hero-content h2 {
-      font-size: 1.2rem;
-    }
-  }
+    padding
   
