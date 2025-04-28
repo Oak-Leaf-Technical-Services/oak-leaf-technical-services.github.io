@@ -20,218 +20,155 @@
 }
 
 body {
-    margin: 0;
-    font-family: 'AvenirNextLTPro', sans-serif;
-    background-color: #F4F3F1;
-    color: #1B130E;
-    line-height: 1.6;
-  }
-  
-  .container {
-    max-width: 60rem;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
+  margin: 0;
+  font-family: 'AvenirNextLTPro', sans-serif;
+  background-color: #F4F3F1;
+  color: #1B130E;
+  line-height: 1.6;
+}
 
-  .header .container {
-    margin: 0;
-    padding: 0 1rem;
-  }  
-  
-  .header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 1rem 0;
-  }
-  
-  .logo {
-    height: 60px;
-  }
-  
-  .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 1rem 1rem;
-    background-size: cover;
-    background-position: center;
-    height: 40vh;
-  }
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
-  .hero .container {
-    padding: 0 1rem;
-  }
-  
-  .main-title {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    color: white;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
-    font-weight: 400;
-  }
-  
-  .sub-title {
-    font-size: 2rem;
-    color: white;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
-    font-weight: 300;
-  }
-  
-  .footer {
-    text-align: center;
-    padding: 3rem 1rem;
-    background-color: #F4F3F1;
-  }
-  
-  .divider-logo {
-    height: 60px;
-    margin-bottom: 1rem;
-  }
-  
-  .company-info {
-    font-size: 0.8rem;
-    color: #1B130E;
-  }
-  
-  .services {
-    background-color: #F4F3F1;
-  }
-  
-  .services-background {
-    background-image: url('images/background.png');
-    background-size: cover;
-    background-position: center;
-    padding: 4rem 1rem;
-  }
-  
-  .services-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* So it stacks on smaller screens */
-  }
-  
-  .left-align {
-    flex: 0 0 40%;
-    text-align: left;
-  }
-  
-  .right-align {
-    flex: 0 0 55%;
-    text-align: right;
-    font-size: 1.2rem;
-    color: white;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-  }
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 0;
+}
 
-  .section-sub-title {
-    font-size: 1.5rem;
-    color: #1B130E;
-    font-weight: 400;
-    margin-bottom: 1rem;
-  }
-  
-  
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 3rem;
-    margin-top: 4rem;
-  }
-  
-  .service-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .service-image {
-    height: 120px;
-    width: auto;
-    margin-bottom: 1rem;
-  }
-  
-  .service-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .service-item p {
-    font-size: 1rem;
-    color: #1B130E;
-  }
-  
-  .services-footer {
-    margin-top: 4rem;
-    text-align: center;
-    font-size: 1rem;
-    color: #1B130E;
-  }
-  
+.header .container {
+  max-width: 60rem;
+  padding: 0 1rem;
+  margin-left: max(calc((100% - 60rem) / 2 - 10rem), 0rem);
+}
 
-  .clients {
-    background-color: #F4F3F1;
-  }
-  
-  .clients-background {
-    background-image: url('/images/background.png');
-    background-size: cover;
-    background-position: center;
-    padding: 4rem 1rem;
-  }
-  
-  .clients-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* Mobile stacking */
-  }
-  
-  .clients-intro {
-    flex: 1 1 50%;
-    text-align: right;
-    font-size: 1.2rem;
-    color: white;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-  }
-  
-  .clients-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    margin-top: 4rem;
-    justify-items: center;
-  }
-  
-  .client-item {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .client-image {
-    height: 150px;
-    width: auto;
-  }
-  
-  .clients-footer {
-    margin-top: 4rem;
-    text-align: center;
-    font-size: 1rem;
-    color: #1B130E;
-  }
-  
+.logo {
+  height: 60px;
+}
 
-  .section-divider {
-    text-align: center;
-    margin: 4rem 0;
-  }
-  
-  .section-divider .divider-logo {
-    height: 60px; /* same as your footer logo height */
-  }
-  
-  
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+
+.main-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+  font-weight: 400;
+}
+
+.sub-title {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+  font-weight: 300;
+}
+
+.footer {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #F4F3F1;
+}
+
+.divider-logo {
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.company-info {
+  font-size: 0.8rem;
+  color: #1B130E;
+}
+
+.background-section {
+  background-image: url('/images/background.png');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 1rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-title.left-align {
+  flex: 1 1 auto;
+  max-width: 40%;
+  text-align: left;
+}
+
+.section-intro {
+  flex: 1 1 auto;
+  max-width: 55%;
+  text-align: right;
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.section {
+  background-color: #F4F3F1;
+}
+
+.responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  margin-top: 4rem;
+  justify-items: center;
+}
+
+.section-sub-title {
+  font-size: 1.5rem;
+  color: #1B130E;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.service-item,
+.client-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.service-image {
+  height: 120px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+.client-image {
+  height: 150px;
+  width: auto;
+}
+
+.services-footer,
+.clients-footer {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #1B130E;
+}
+
+.section-divider {
+  text-align: center;
+  margin: 4rem 0;
+}
