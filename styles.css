@@ -56,7 +56,7 @@
   /* Hero Section */
   .hero {
     background: url('background.png') center center/cover no-repeat;
-    height: 90vh;
+    height: 40vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,6 +67,8 @@
   .hero-content h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
   }
   
   .hero-content h2 {
