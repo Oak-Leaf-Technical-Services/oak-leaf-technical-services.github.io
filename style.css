@@ -172,3 +172,71 @@ body {
   text-align: center;
   margin: 4rem 0;
 }
+
+/* Responsive adjustments for mobile view */
+@media (max-width: 768px) {
+
+  /* Hero adjustments */
+  .main-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .sub-title {
+    font-size: 1.4rem;
+  }
+  .hero {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  /* Header and logo alignment fix */
+  .header .container {
+    margin-left: 0;
+    padding: 0 1rem;
+  }
+  .header {
+    padding: 0.5rem 0;
+  }
+  .logo {
+    height: 40px;
+  }
+
+  /* Section header fix */
+  .section-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  .main-title.left-align,
+  .section-intro {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  /* Background-section padding reduction */
+  .background-section {
+    padding: 2rem 1rem;
+  }
+
+  /* Grid adjustments for clarity */
+  .responsive-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Section divider */
+  .section-divider {
+    margin: 2rem 0;
+  }
+  .divider-logo {
+    height: 40px;
+  }
+
+  /* Footer padding adjustment */
+  .footer {
+    padding: 2rem 1rem;
+  }
+  .company-info {
+    font-size: 0.75rem;
+  }
+}
