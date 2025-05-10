@@ -27,6 +27,10 @@ body {
   line-height: 1.6;
 }
 
+html { 
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 60rem;
   margin: 0 auto;
@@ -41,9 +45,13 @@ body {
 }
 
 .header .container {
+  display: flex;             
+  justify-content: space-between;
+  align-items: center;
   max-width: 60rem;
   padding: 0 1rem;
-  margin-left: max(calc((100% - 60rem) / 2 - 10rem), 0rem);
+  /* margin-left: max(calc((100% - 60rem) / 2 - 10rem), 0rem); */
+  margin: 0 auto;
 }
 
 .logo {
@@ -177,6 +185,35 @@ body {
   color: #1B130E;
 }
 
+.nav {
+  margin-left: auto;
+  position: relative;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #1B130E;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #1B130E;
+}
+
 /* Responsive adjustments for mobile view */
 @media (max-width: 768px) {
 
@@ -242,5 +279,26 @@ body {
   }
   .company-info {
     font-size: 0.75rem;
+  }
+
+  
+  .nav-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 3rem;
+    background-color: #F4F3F1;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    flex-direction: column;
+    padding: 1rem;
+    z-index: 1000;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
   }
 }
